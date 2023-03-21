@@ -1,0 +1,71 @@
+.container {
+    background-color: lightgrey;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-auto-rows: minmax(50px, auto);
+    grid-template-areas: 
+    "nav"
+    "title"
+    "ban"
+    "main"
+    "side"
+    "ft";
+}
+
+.title {
+    padding: 10px;
+    margin-top: -15px;
+}
+
+.page-title{
+    font-size: x-large;
+}
+
+.blog-cards {
+    grid-area: main;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.blogs {
+    background-color: #444;
+    height: 15%;
+    width: 80%;
+    text-decoration: none;
+    border: 3px solid white;
+    margin: 5px;
+    text-align: center;
+}
+
+#date {
+    color: black
+}
+#blog-title {
+    color: white;
+}
+#preview {
+    display: none;
+}
+
+.connect {
+    text-align: center;
+}
+
+.connect-title{
+    color: blue;
+}
+
+.user-info {
+    font-size: 25px;
+}
+
+.avatar {
+    border-radius: 50%;
+    width: 200px;
+}
+  
+.bio {
+    list-style: none;
+}

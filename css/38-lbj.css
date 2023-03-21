@@ -1,0 +1,261 @@
+.container{
+    background-color: lightgray;
+}
+
+.nav-box {
+    grid-area: nav;
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-menu {
+    background-color: white;
+    list-style: none;
+    margin-top: 0;
+    padding-left: 0;
+    display: flex;
+    width: 100%;
+}
+.nav-item {
+    padding: 0 10px;
+    text-decoration: none;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #444;
+    font-size: larger;
+}
+
+.author {
+    background-color: white;
+}
+
+.avatar {
+    border-radius: 50%;
+}
+
+.title {
+    color: white;
+    grid-area: title;
+    background-color: #444;
+    text-align: center;
+    font-size: small;
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+    margin-top: -15px;
+}
+
+.home-page {
+    text-align: center;
+}
+
+.connect {
+    background-color: #444;
+    text-align: center;
+}
+    .connect-title {
+        color: blue;
+    }
+
+.bottom {
+    grid-area: ft;
+    text-align: center;
+    width: 100%;
+}
+
+@media (max-width: 640px) {
+    .author {
+        text-align: center;
+        margin-top: -20px;
+    }
+
+    .avatar {
+        width: 125px;
+    }
+
+    .goat-pic {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 200px;
+    }
+
+    .player-img {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .kareem-pic {
+        width: 150px;
+    }
+
+    .lebron-pic {
+        width: 150px;
+    }
+    
+    
+    
+}
+
+@media (min-width: 641px) and (max-width: 1007px) {
+    .container {
+        display: grid;
+        grid-template-columns: 50%, 50%;
+        grid-auto-rows: minmax(50px, auto);
+        grid-template-areas: 
+            "nav nav"
+            "title title"
+            "auth auth"
+            "intro intro"
+            "bg1 bg1"
+            "bg2 bg2"
+            "connect connect"
+            "btm btm";
+    }
+
+    .nav-box {
+        grid-area: nav;
+    }
+        
+    .author {
+        grid-area: auth;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 35px;
+        height: 2o0px;
+    }
+
+    .avatar {
+        width: 100px;
+        margin-bottom: 20px;
+    }
+
+    .auth-info {
+        margin-top: 0px;
+    }
+
+    .intro {
+        grid-area: intro;
+    }
+
+    .goat-pic {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+
+    .goat-cap {
+        text-align: center;
+    }
+
+    .blog-content-one {
+        grid-area: bg1;
+    }
+
+    .player-img {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .kareem-pic {
+        width: 250px;
+    }
+
+    .lebron-pic {
+        width: 250px;
+    }
+
+    .blog-content-two {
+        grid-area: bg2;
+    }
+
+    .section-title {
+        margin-left: 25px;
+    }
+
+    .blog-text {
+        width: 90%;
+        margin-left: 25px;
+    }
+
+    .connect {
+        grid-area: connect;
+    }
+
+    .bottom {
+        grid-area: btm;
+    }
+}
+
+@media (min-width: 1008px) {
+    .container{
+        display: grid;
+        grid-template-columns: 70%, 30%;
+        grid-auto-rows: minmax(50px, auto);
+        grid-template-areas: 
+        "nav nav"
+        "title title"
+        "auth auth"
+        "intro intro"
+        "bg1 bg1"
+        "bg2 bg2"
+        "connect connect"
+        "btm btm";
+    }
+
+    .nav-box {
+        grid-area: nav;
+    }
+
+    .author {
+        grid-area: auth;
+        text-align: center;
+        margin-top: -20px;
+    }
+
+    .avatar {
+        width: 50px;
+    }
+
+    .title {
+        grid-area: title;
+    }
+
+    .intro {
+        grid-area: intro;
+        display: flex;
+        flex-direction: row;
+        margin: 5px;
+    }
+
+    .blog-content-one {
+        grid-area: bg1;
+        margin: 10px;
+    }
+
+    .player-img {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: center;
+        margin: 15px;
+    }
+
+    .blog-content-two {
+        grid-area: bg2;
+    }
+
+    .connect {
+        grid-area: connect;
+    }
+
+    .bottom {
+        grid-area: btm;
+    }
+}

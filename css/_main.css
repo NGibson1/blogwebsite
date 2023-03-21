@@ -1,0 +1,56 @@
+@import "mobile.css" (max-width: 640px);
+@import "medium-screen.css" (min-width: 641px) and (max-width: 1007px);
+@import "large-screen.css" (min-width: 1008px);
+
+.nav-box {
+grid-area: nav;
+display: flex;
+flex-direction: row;
+}
+
+.nav-menu {
+background-color: white;
+list-style: none;
+margin-top: 0;
+padding-left: 0;
+display: flex;
+width: 100%;
+}
+
+.nav-item {
+padding: 0 10px;
+text-decoration: none;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #444;
+    font-size: larger;
+}
+
+.title {
+color: white;
+grid-area: title;
+background-color: #444;
+text-align: center;
+font-size: xx-large;
+border-top: 5px solid black;
+border-bottom: 5px solid black;
+}
+
+.banner {
+grid-area: ban;
+width: 100%;
+text-align: center;
+}
+
+.retro-photo {
+    width: 100%;
+}
+
+.bottom {
+grid-area: ft;
+text-align: center;
+background-color: #444;
+width: 100%;
+}
